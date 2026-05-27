@@ -47,6 +47,15 @@ jobs:
         echo "Running smoke tests on staging..."
         python app.py
 
+    - name: Deploy to Staging
+      run: |
+        echo "Deploying application to STAGING environment..."
+
+    - name: Smoke Test
+      run: |
+        echo "Running smoke tests on staging..."
+        python app.py
+
   production:
 
     needs: staging
