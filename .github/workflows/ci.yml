@@ -52,7 +52,7 @@ jobs:
 
     - name: Deploy to Staging
       run: |
-        echo "Deploying application to STAGING environment..."
+        echo "using staging key ${{ secrets.STAGING_KEY }}""
 
     - name: Smoke Test
       run: |
@@ -78,7 +78,7 @@ jobs:
 
     - name: Deploy to Production
       run: |
-        echo "Deploying application to PRODUCTION environment..."
+        echo "Using prod key ${{ secrets.PROD_KEY }}"
 
     - name: Production Verification
       run: |
