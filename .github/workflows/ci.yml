@@ -52,7 +52,7 @@ jobs:
 
     - name: Deploy to Staging
       run: |
-        echo "using staging key ${{ secrets.STAGING_KEY }}""
+        echo "using staging key ${{ secrets.STAGING_KEY }}"
 
     - name: Smoke Test
       run: |
